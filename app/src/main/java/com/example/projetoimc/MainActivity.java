@@ -26,21 +26,33 @@ public class MainActivity extends AppCompatActivity {
                 int peso = Integer.parseInt(editpeso.getText().toString());
                 float altura = Float.parseFloat(editaltura.getText().toString());
                 imc[0] = peso /(altura * altura);
-                if(imc[0]<18.5){
+                if(imc[0]<16){
                     tvresultado.setText(imc[0]+"");
-                    tvdescrição.setText("Baixo Peso");
+                    tvdescrição.setText("Magreza grave");
                 }
-                else{
-                    if(imc[0]<25){
+                else{ if(imc[0]<17){
                         tvresultado.setText(imc[0]+"");
-                        tvdescrição.setText("Peso Adequado");
-                    }else{
-                        if(imc[0]<30){
+                        tvdescrição.setText("Magreza moderada");
+                    }else{ if(imc[0]<18.5){
                             tvresultado.setText(imc[0]+"");
-                            tvdescrição.setText("Sobrepeso"); }
-                        else {
+                            tvdescrição.setText("Magreza leve"); }
+                        else {if(imc[0]<25){
                             tvresultado.setText(imc[0] + "");
-                            tvdescrição.setText("Obesidade");
+                            tvdescrição.setText("Saudável");}
+                            else{if(imc[0]<30){
+                                tvresultado.setText(imc[0] + "");
+                                tvdescrição.setText("Sobrepeso");}
+                                else{if(imc[0]<35){
+                                    tvresultado.setText(imc[0] + "");
+                                    tvdescrição.setText("Obesidade Grau I");}
+                                      else{if(imc[0]<40){
+                                        tvresultado.setText(imc[0] + "");
+                                        tvdescrição.setText("Obesidade Grau II");}
+                        else{
+                            tvresultado.setText(imc[0] + "");
+                            tvdescrição.setText("Obesidade Grau IIII (mórbida)");
+                        }
+                } }}
                         }
                     }
 
