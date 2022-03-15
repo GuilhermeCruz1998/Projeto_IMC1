@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/Peso"
+            android:layout_width="399dp"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:text="Peso - KG" />
+
+        <EditText
+            android:id="@+id/editPeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10pt"
+            android:text="Altura - Metros" />
+
+        <EditText
+            android:id="@+id/editAltura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btcalcular"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:id="@+id/tvDescrição"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center_horizontal"
+            android:textSize="10pt"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
